@@ -114,8 +114,7 @@ main .loading {
     padding: 8px;
     background-color: #eee;
     border: none;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-radius: 3px;
     box-shadow: none;
     outline: none;
 }
@@ -123,11 +122,10 @@ main .loading {
 #search .search-area .button{
     position: absolute;
     right: 0;
-    padding: 9px 13px;
+    padding: 9px 10px;
     background: #FF5722;
     color: #fff;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
