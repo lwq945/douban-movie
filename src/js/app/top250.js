@@ -35,7 +35,7 @@ var Top250 = (function(){
             _this.isLoading = true ;
             _this.$target.find('.loading').show();
             $.ajax({
-              url: 'http://api.douban.com/v2/movie/top250',
+              url: '//api.douban.com/v2/movie/top250',
               dataType: 'jsonp',
               data:{
                 start: _this.index||0

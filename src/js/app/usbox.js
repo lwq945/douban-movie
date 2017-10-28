@@ -20,7 +20,7 @@ var UsBox = (function(){
              var _this = this;
             _this.$target.find('.loading').show();
             $.ajax({
-              url: 'http://api.douban.com/v2/movie/us_box',
+              url: '//api.douban.com/v2/movie/us_box',
               dataType: 'jsonp'
             }).done(function(ret){
               console.log(ret)

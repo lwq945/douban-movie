@@ -29,7 +29,7 @@ var Search = (function(){
             var _this = this;
             _this.$target.find('.loading').show();
             $.ajax({
-              url: 'http://api.douban.com/v2/movie/search',
+              url: '//api.douban.com/v2/movie/search',
               dataType: 'jsonp',
               data: {
                   q: _this.keyword
