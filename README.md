@@ -5,6 +5,7 @@
 [预览地址](https://lwq945.github.io/douban-movie/)
 
 扫描二维码，手机查看效果
+
 ![](https://i.loli.net/2017/10/28/59f48d1a95184.png)
 
 ## 涉及技术
