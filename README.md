@@ -10,7 +10,7 @@
 
 ## 涉及技术
 - HTML5，CSS3（页面布局和效果）
-- jQuery（代码模块化）
+- jQuery（代码模块化、代码复用）
 - webpack（js的合并和压缩）
 - npm的使用
 
