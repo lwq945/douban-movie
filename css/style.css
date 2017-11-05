@@ -35,7 +35,7 @@ main > section {
     height: calc(100% - 50px);
     padding: 0 10px ; 
     background: #fff;
-    overflow: scroll;
+    overflow: auto; /*去掉横向滚动条*/
     -webkit-overflow-scrolling: touch; /*ios上滚动有弹形*/
 }
 section:nth-child(1) {
