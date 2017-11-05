@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+::-webkit-scrollbar { /*去掉滚动条*/
+	display: none;
+}
+
 input,input:focus,input:active{
     user-select: text;
 }
@@ -35,7 +39,8 @@ main > section {
     height: calc(100% - 50px);
     padding: 0 10px ; 
     background: #fff;
-    overflow: auto; /*去掉横向滚动条*/
+    overflow: scroll; 
+    /*overflow: auto; /*去掉横向滚动条*/
     -webkit-overflow-scrolling: touch; /*ios上滚动有弹形*/
 }
 section:nth-child(1) {
