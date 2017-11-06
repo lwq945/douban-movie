@@ -51,7 +51,7 @@ section .container .subject {
     padding: 5px;
     margin: 10px 0;
     border: 1px solid #e2dbdb;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
 .container .subject .movie-pic {
