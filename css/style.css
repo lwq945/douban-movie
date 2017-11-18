@@ -16,6 +16,9 @@ a {
 ::-webkit-scrollbar { /*去掉滚动条*/
 	display: none;
 }
+::-webkit-scrollbar { /*去掉滚动条*/
+	width: 0;
+}
 
 input,input:focus,input:active{
     user-select: text;
