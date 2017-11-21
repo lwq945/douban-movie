@@ -13,7 +13,7 @@
 - jQuery（代码模块化、代码复用）
 - webpack（js的合并和压缩）
 - npm的使用
--单页路由(history.pushState,window.onpopstate)
+- 单页路由(history.pushState,window.onpopstate)
 
 ## 实现功能
 - 展示电影排行榜Top250
