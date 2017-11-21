@@ -35,7 +35,7 @@ var Search = (function(){
                   q: _this.keyword
               }
             }).done(function(ret){
-              console.log(ret)
+              //console.log(ret)
               // this.appendHtml(ret);
               callback&&callback(ret);     
             }).fail(function(){

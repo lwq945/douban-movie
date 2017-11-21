@@ -41,7 +41,7 @@ var Top250 = (function(){
                 start: _this.index||0
               }  
             }).done(function(ret){
-              console.log(ret)
+              //console.log(ret)
               _this.index += 20;
               if(_this.index >= ret.total){
                   _this.isFinish = true;

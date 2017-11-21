@@ -23,7 +23,7 @@ var UsBox = (function(){
               url: '//api.douban.com/v2/movie/us_box',
               dataType: 'jsonp'
             }).done(function(ret){
-              console.log(ret)
+              //console.log(ret)
               // this.appendHtml(ret);
               callback&&callback(ret);     
             }).fail(function(){
