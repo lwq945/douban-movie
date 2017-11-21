@@ -33,16 +33,21 @@ var Tab = (function(){
         initPage: function(){
             var _this = this;
             var hash = location.hash.split('#')
-            this.$tabs.each(function(index,item){
-              var attr = $(item).attr('data-page')
-                if(attr === hash[1]){
-                    _this.$tabs.eq(index).addClass('active').siblings().removeClass('active');
-                    _this.$panels.eq(index).show().siblings().hide();
-                }else {
-                    _this.$tabs.eq(0).addClass('active').siblings().removeClass('active');
-                    _this.$panels.eq(0).show().siblings().hide();
-              }
-            })
+            console.log(hash)
+            if(hash[1]){
+              this.$tabs.each(function(index,item){
+                 var attr = $(item).attr('data-page')
+                 if(attr === hash[1]){
+                     console.log(index)
+                     _this.$tabs.eq(index).addClass('active').siblings().removeClass('active');
+                     _this.$panels.eq(index).show().siblings().hide();
+                 }
+              })   
+            }else {
+                   console.log(233333)
+                  this.$tabs.eq(0).addClass('active').siblings().removeClass('active');
+                  this.$panels.eq(0).show().siblings().hide();
+            }
         }
     }
 
