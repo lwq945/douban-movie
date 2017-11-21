@@ -1,11 +1,14 @@
 var webpack = require('webpack');
 var path = require('path')
+var ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
-	entry: './src/js/index.js',
+	entry: {
+    bundle: './src/js/index.js'
+  },
 	output: {
-		filename: 'bundle.js',
-		path: path.resolve(__dirname,'dist/js')
+    path: path.join(__dirname,'/dist'),
+    filename: '[name].js'
 	},
 
 	module:{
@@ -14,17 +17,26 @@ module.exports = {
 				test: /\.js$/,
 				exclude: /(node_modules)/, // 排除 不编译当前目录下的js
         use: {
-            loader: 'babel-loader'
+          loader: 'babel-loader'
         }
-			}
+      },
+      {
+        test: /\.css$/,
+        exclude: /(node_modules)/,
+        use: ExtractTextPlugin.extract({
+        // 必须这样写，否则会报错
+          fallback: "style-loader",
+          use: "css-loader"
+        })
+      }
 		]
 	},
 
 	resolve: {
-        alias: {
-            jquery: path.join(__dirname,'src/js/lib/jquery-3.1.1.min.js')   //给jquery去别名
-        }
-   },
+    alias: {
+        jquery: path.join(__dirname,'src/js/lib/jquery-3.1.1.min.js')   //给jquery取别名
+    }
+  },
 
 	plugins: [
 		new webpack.ProvidePlugin({ //不用手动引入jquery
@@ -34,6 +46,7 @@ module.exports = {
         compress: {
             warnings: false
         }
-    })
+    }),
+    new ExtractTextPlugin("./[name].css") //分离css,js
 	]
 }
